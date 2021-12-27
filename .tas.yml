@@ -7,9 +7,10 @@ preMerge:
   pattern:
     - "./test/weex/**/*spec.js"
 preRun:
+ command:
   - npm install
 postRun:
-  - node --version
+ command:
   - node --version
 configFile: "./test/weex/jasmine.js"
 version: 1.0
