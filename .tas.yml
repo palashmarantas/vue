@@ -1,16 +1,16 @@
 ---
-framework: "jasmine"
+framework: jasmine
 postMerge:
   pattern:
-    - "./test/weex/**/*spec.js"
+    - "./test/weex/**/*.spec.js"
 preMerge:
   pattern:
-    - "./test/weex/**/*spec.js"
+    - "./test/weex/**/*.spec.js"
 preRun:
- command:
-  - npm install
+     command:
+        - yarn install
 postRun:
- command:
-  - node --version
+     command:
+        - node --version
 configFile: "./test/weex/jasmine.js"
-version: 1.1
+version: 1.0
